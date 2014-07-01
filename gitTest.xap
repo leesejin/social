@@ -5,7 +5,7 @@
 		<property name="enabled">true</property>
 		<property name="text">Git Test</property>
 		<property name="textSize">17</property>
-		<property name="textColor">#aa00ff</property>
+		<property name="textColor">#ff55ff</property>
 		<property name="align">left</property>
 	</view>
 </page>
