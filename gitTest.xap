@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<appcessory direction="portrait" deviceResolution="G2/Nexus5">
+<storyboard direction="portrait" deviceResolution="G2/Nexus5">
 <page name="Page1">
 	<view name="Label1" type="Label" left="94" top="82" width="140" height="36">
 		<property name="enabled">true</property>
-		<property name="text">Git Test</property>
+		<property name="text">kjhnjkgkjghklj</property>
 		<property name="textSize">17</property>
-		<property name="textColor">#00aaff</property>
+		<property name="textColor">#ff0000</property>
 		<property name="align">left</property>
 	</view>
 </page>
-</appcessory>
+</storyboard>
