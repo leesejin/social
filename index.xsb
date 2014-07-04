@@ -9,4 +9,6 @@
 		<property name="align">center</property>
 	</view>
 </page>
+<page name="Page3">
+</page>
 </storyboard>
