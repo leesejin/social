@@ -1,0 +1,19 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<polymer-element name="polymer-ui-label" attributes="text">
+  <template>
+  	<label>{{text}}</label>
+    </template>
+  <script>
+    Polymer('polymer-ui-label', {
+      text: '',
+     
+      setText: function(t) {
+      	this.text = t;
+      },
+      setTextColor: function(c) {
+      	this.style.color = c;
+      }
+    });
+  </script>
+</polymer-element>
