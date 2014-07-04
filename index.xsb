@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <storyboard direction="portrait" deviceResolution="G2/Nexus5">
 <page name="Page1">
-	<view name="Label1" type="Label" left="13" top="64" width="140" height="36">
+	<view name="Label1" type="Label" left="13" top="64" width="121" height="36">
 		<property name="enabled">true</property>
 		<property name="text">테스트</property>
 		<property name="textSize">19</property>
-		<property name="textColor">#ff19e8</property>
+		<property name="textColor">#434fff</property>
 		<property name="align">center</property>
 	</view>
 </page>
