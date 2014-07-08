@@ -1,46 +1,25 @@
+<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="format-detection" content="telephone=no">
-  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
-  <script src="js/jquery/jquery-1.9.1.min.js"></script>
-  <script src="js/jquery/ui/1.10.2/jquery-ui.js"></script>
-  <script src="js/jquery/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-  <script type="text/javascript" src="js/storyboard.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript" src="js/appWidget.js"></script>
-  <link rel="stylesheet" href="js/jquery/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" href="js/jquery/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
-  <link rel="stylesheet" href="css/appWidget.css">
-  <title>StoryBoard</title>
-  <style type="text/css">
-#Label1 {
-	position: absolute;
-	left: 13px;
-	top: 27px;
-	width: 121px;
-	height: 38px;
-}
-</style>
-  <script type="text/javascript">
-var app = {
+<title>StoryBoard</title>
 
-	initialize: function() {}
+<!-- -->
+<script src="libs/polymer/platform/platform.js"></script>
 
 
-};</script>
+<link rel="import" href="libs/polymer/polymer-ui-label/polymer-ui-label.html">
+<link rel="import" href="libs/polymer/paper-button/paper-button.html">
+<link rel="import" href="libs/polymer/paper-radio-button/paper-radio-button.html">
+<link rel="import" href="libs/polymer/paper-radio-group/paper-radio-group.html">
+<link rel="import" href="libs/polymer/paper-input/paper-input.html">
+
+
+
 </head>
-    <body>
-  <div data-tag="content">
-    <div data-role="page" id="Page1">
-      <div data-role="appLabel" id="Label1" data-text="테스트" data-text-size="19" data-text-color="#434fff" data-text-align="center"></div>
+<body ng-controller="CommonController">
+    <div ng-view>
     </div>
-    <div data-role="page" id="Page3"></div>
-  </div>
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript">
-            app.initialize();
-			$app.initialize();
-        </script>
-</body></html>
+    <script data-main="js/init.js" src="libs/require/require.js"></script>
+</body>
+
+</html>

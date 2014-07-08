@@ -1,14 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <storyboard direction="portrait" deviceResolution="GalaxyS4">
-<page name="Page1">
-	<view name="Label1" type="Label" left="13" top="64" width="121" height="36">
+<page name="mainPage">
+	<view name="btMaster" type="Button" left="26" top="75" width="140" height="60">
 		<property name="enabled">true</property>
 		<property name="text">테스트</property>
-		<property name="textSize">19</property>
-		<property name="textColor">#434fff</property>
+		<property name="textSize">14</property>
+		<property name="textColor">#2446de</property>
+		<trigger event="vclick">
+			<action type="setText">
+				<param name="target">Label1</param>
+				<param name="text">1111</param>
+			</action>
+			<action type="setText">
+				<param name="target">Label2</param>
+				<param name="text">ggggg</param>
+			</action>
+			<action type="setText">
+				<param name="target">Label3</param>
+				<param name="text">erwerfsfsf</param>
+			</action>
+		</trigger>
+	</view>
+	<view name="Label1" type="Label" left="168" top="119" width="140" height="36">
+		<property name="enabled">true</property>
+		<property name="text">안녕하세요?</property>
+		<property name="textSize">17</property>
+		<property name="textColor">#a828df</property>
 		<property name="align">center</property>
 	</view>
+	<view name="Label2" type="Label" left="149" top="159" width="140" height="36">
+		<property name="enabled">true</property>
+		<property name="text">Label</property>
+		<property name="textSize">17</property>
+		<property name="textColor">#000000</property>
+		<property name="align">right</property>
+	</view>
+	<view name="Label3" type="Label" left="75" top="174" width="140" height="36">
+		<property name="enabled">true</property>
+		<property name="text">Label</property>
+		<property name="textSize">17</property>
+		<property name="textColor">#000000</property>
+		<property name="align">left</property>
+	</view>
+	<view name="RadioButton1" type="RadioButton" left="20" top="219" width="165" height="36">
+		<property name="enabled">true</property>
+		<property name="checked">false</property>
+		<property name="group">gr</property>
+		<property name="text">페이지 1</property>
+		<property name="value">mainPage</property>
+		<property name="textSize">17</property>
+		<property name="textColor">#000000</property>
+	</view>
+	<view name="RadioButton2" type="RadioButton" left="200" top="225" width="165" height="36">
+		<property name="enabled">true</property>
+		<property name="checked">true</property>
+		<property name="group">gr</property>
+		<property name="text">페이지 2</property>
+		<property name="value">bbbbb</property>
+		<property name="textSize">17</property>
+		<property name="textColor">#000000</property>
+	</view>
+	<view name="RadioButton3" type="RadioButton" left="104" top="282" width="165" height="36">
+		<property name="enabled">true</property>
+		<property name="checked">false</property>
+		<property name="group">gr</property>
+		<property name="text">페이지 3</property>
+		<property name="value">abab</property>
+		<property name="textSize">17</property>
+		<property name="textColor">#000000</property>
+	</view>
+	<view name="Button2" type="Button" left="28" top="337" width="140" height="60">
+		<property name="enabled">true</property>
+		<property name="text">pageMove</property>
+		<property name="textSize">14</property>
+		<property name="textColor">#000000</property>
+		<trigger event="vclick">
+			<action type="changeViewForAction">
+				<param name="target">gr</param>
+			</action>
+			<action type="setText">
+				<param name="target">RadioButton1</param>
+				<param name="text">news</param>
+			</action>
+		</trigger>
+	</view>
 </page>
-<page name="Page3">
+<page name="bbbbb">
+	<view name="Button1" type="Button" left="38" top="81" width="140" height="60">
+		<property name="enabled">true</property>
+		<property name="text">Button</property>
+		<property name="textSize">14</property>
+		<property name="textColor">#000000</property>
+		<trigger event="vclick">
+			<action type="changeView">
+				<param name="target">mainPage</param>
+			</action>
+		</trigger>
+	</view>
+</page>
+<page name="abab">
+	<view name="Button3" type="Button" left="97" top="127" width="140" height="60">
+		<property name="enabled">true</property>
+		<property name="text">Button</property>
+		<property name="textSize">14</property>
+		<property name="textColor">#000000</property>
+		<trigger event="vclick">
+			<action type="changeView">
+				<param name="target">mainPage</param>
+			</action>
+		</trigger>
+	</view>
 </page>
 </storyboard>

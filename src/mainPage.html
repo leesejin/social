@@ -1,0 +1,89 @@
+<style>
+#btMaster {
+	position: absolute;
+	left: 26px;
+	top: 75px;
+	width: 140px;
+	height: 60px;
+	font-size: 14px;
+	color: #2446de;
+}
+#Label1 {
+	position: absolute;
+	left: 168px;
+	top: 119px;
+	width: 140px;
+	height: 36px;
+	font-size: 17px;
+	color: #a828df;
+	text-align: center;
+}
+#Label2 {
+	position: absolute;
+	left: 149px;
+	top: 159px;
+	width: 140px;
+	height: 36px;
+	font-size: 17px;
+	color: #000000;
+	text-align: right;
+}
+#Label3 {
+	position: absolute;
+	left: 75px;
+	top: 174px;
+	width: 140px;
+	height: 36px;
+	font-size: 17px;
+	color: #000000;
+	text-align: left;
+}
+#Button2 {
+	position: absolute;
+	left: 28px;
+	top: 337px;
+	width: 140px;
+	height: 60px;
+	font-size: 14px;
+	color: #000000;
+}
+#RadioButton1 {
+	position: absolute;
+	left: 20px;
+	top: 219px;
+	width: 165px;
+	height: 36px;
+	font-size: 17px;
+	color: #000000;
+}
+#RadioButton2 {
+	position: absolute;
+	left: 200px;
+	top: 225px;
+	width: 165px;
+	height: 36px;
+	font-size: 17px;
+	color: #000000;
+}
+#RadioButton3 {
+	position: absolute;
+	left: 104px;
+	top: 282px;
+	width: 165px;
+	height: 36px;
+	font-size: 17px;
+	color: #000000;
+}
+</style>
+
+<paper-button id="btMaster" label="테스트" raisedButton ng-click="btMaster_OnClick()"></paper-button>
+<polymer-ui-label id="Label1" text="안녕하세요?"></polymer-ui-label>
+<polymer-ui-label id="Label2" text="Label"></polymer-ui-label>
+<polymer-ui-label id="Label3" text="Label"></polymer-ui-label>
+<paper-button id="Button2" label="pageMove" raisedButton ng-click="Button2_OnClick()"></paper-button>
+
+<paper-radio-group id="gr" selected="bbbbb">
+<paper-radio-button id="RadioButton1" name="mainPage" label="페이지 1" toggles></paper-radio-button>
+<paper-radio-button id="RadioButton2" name="bbbbb" label="페이지 2" toggles></paper-radio-button>
+<paper-radio-button id="RadioButton3" name="abab" label="페이지 3" toggles></paper-radio-button>
+</paper-radio-group>

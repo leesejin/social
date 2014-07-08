@@ -9,10 +9,11 @@ define([
 	
 		return basicModule.config(function ($routeProvider) {
 
-			$routeProvider.when('/page1', routeConfig.config('../src/page1.html', 'controllers/page1'));
-			$routeProvider.when('/page2', routeConfig.config('../src/page2.html', 'controllers/page2'));
+			$routeProvider.when('/mainPage', routeConfig.config('../src/mainPage.html', 'controllers/mainPage'));
+			$routeProvider.when('/bbbbb', routeConfig.config('../src/bbbbb.html', 'controllers/bbbbb'));
+			$routeProvider.when('/abab', routeConfig.config('../src/abab.html', 'controllers/abab'));
 
 
-			$routeProvider.otherwise({redirectTo:'/page1'});
+			$routeProvider.otherwise({redirectTo:'/mainPage'});
 		});
 });
